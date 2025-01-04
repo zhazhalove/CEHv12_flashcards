@@ -1,0 +1,104 @@
+{
+  "Chapter 2": [
+    {
+      "Front": "Term: Footprinting",
+      "Back": "Definition: The process of gathering information about a target to understand its systems and potential vulnerabilities.\nTypes: Passive (no direct interaction) and active (direct interaction with the target).\nGoal: To gain knowledge about the target for potential access.\nFootprinting is often the first step in a hacking attempt."
+    },
+    {
+      "Front": "Term: Passive Footprinting",
+      "Back": "Definition: Gathering information about a target without directly interacting with it, like eavesdropping.\nExamples: Observing public information, using search engines, or looking at cached websites.\nThis type of footprinting does not interact with the target directly."
+    },
+    {
+      "Front": "Term: Active Footprinting",
+      "Back": "Definition: Gathering information by directly interacting with the target's systems, such as running scanners or sending queries.\nMay lead to detection by the target.\nExamples: DNS queries, using \"who is\" lookups, and running vulnerability scans."
+    },
+    {
+      "Front": "Term: Social Engineering",
+      "Back": "Definition: Manipulating individuals to gain information or access, by using a persona.\nCan be done in the physical or digital world.\nExample: Interacting with someone in an organization to get information."
+    },
+    {
+      "Front": "Term: Google Dorking",
+      "Back": "Definition: Using Google's advanced search features to find specific information for footprinting.\nHow it works: Using special search operators to find granular information that might be otherwise hidden.\nExamples: Using \"inurl:\", \"intitle:\", or quotes to specify search parameters.\nPurpose: To find uncovered information for nefarious or ethical purposes.\nGoal: To identify specific systems or vulnerabilities."
+    },
+    {
+      "Front": "Term: Shodan",
+      "Back": "Definition: A search engine for internet-connected devices, not just websites.\nFunction: To find devices with specific configurations or vulnerabilities.\nHow to Use: Search using keywords and filters, and can be used to find screenshots.\nRequires an account to access full functionality.\nFilters: Allow for more specific searches (e.g. port, has_screenshot)."
+    },
+    {
+      "Front": "Term: Censys",
+      "Back": "Definition: A search engine similar to Shodan, used to find devices accessible on the internet.\nFunction: To discover, monitor, and analyze devices.\nHelps blue teams identify internet-facing assets.\nFeatures: Offers interactive searches, API access, and a view of network connections."
+    },
+    {
+      "Front": "Term: Subdomain Enumeration",
+      "Back": "Definition: The process of finding subdomains associated with a main domain.\nPurpose: To increase the attack surface, by finding more potential targets.\nMethods: Google searches, examining source code, and using online tools.\nTools: Netcraft, and other online tools can help automate subdomain enumeration."
+    },
+    {
+      "Front": "Term: Social Networking Recon",
+      "Back": "Definition: Gathering information about a target through social media platforms.\nTargets: Company information, employee information, technologies used, and other personal details.\nPurpose: To gain insight for potential attacks, such as creating fake badges."
+    },
+    {
+      "Front": "Term: Job Board Recon",
+      "Back": "Definition: Using job boards to gather information about a target.\nTargets: Contact information, locations, technologies, and other details about the organization.\nHow to Use: Search job posts for clues about the target's infrastructure and practices."
+    },
+    {
+      "Front": "Term: Deep Web",
+      "Back": "Definition: Parts of the internet not indexed by standard search engines.\nContent: Includes password-protected content, databases, and private websites.\nAccessibility: Requires direct URL access or authentication."
+    },
+    {
+      "Front": "Term: Dark Web",
+      "Back": "Definition: A subset of the deep web that is intentionally hidden and requires special software to access.\nAccessibility: Requires special software like the Tor Browser for access.\nPurpose: To enable anonymous communication and access."
+    },
+    {
+      "Front": "Term: Darknet",
+      "Back": "Definition: Private networks that operate over the internet with the intention of anonymity.\nAccessibility: Through peer-to-peer software, and friend-to-friend networks."
+    },
+    {
+      "Front": "Term: Email Tracking",
+      "Back": "Definition: Techniques used to monitor if an email is opened or links are clicked.\nMethods: Read receipts, tracking pixels, and trackable links.\nTools: Linkly and Bitly for creating trackable links."
+    },
+    {
+      "Front": "Term: Whois",
+      "Back": "Definition: A query protocol used to look up information about a domain name's registration details.\nInformation Obtained: Domain registrant, contact information, and name servers.\nModels: \"Thick\" (more data) and \"thin\" (less data) models.\nOften, personally identifiable information is redacted for privacy.\nTools: Online \"whois\" services to perform queries."
+    },
+    {
+      "Front": "Term: DNS (Domain Name System)",
+      "Back": "Definition: A system that translates domain names to IP addresses.\nInformation Obtained: Domain names, IP addresses, mail server information, and other DNS records.\nTechniques: DNS lookups (e.g. NSLOOKUP, DIG) and zone transfers.\nZone transfers can reveal all DNS records in a zone."
+    },
+    {
+      "Front": "Term: Zone Transfer",
+      "Back": "Definition: A DNS query that requests all DNS records in a zone.\nPurpose: To get a complete list of a domain's subdomains and IP addresses.\nTools: NSLOOKUP, DIG, and online tools.\nImportance: Can expose all of a target's systems."
+    },
+    {
+      "Front": "Term: Social Engineering (as a Recon Technique)",
+      "Back": "Definition: Manipulating individuals to gain information or access to systems.\nMethods: Phone calls, impersonation, and exploiting trust.\nTargets: Network information, credentials, and other sensitive data.\nPeople often believe or comply with requests made by someone in authority."
+    },
+    {
+      "Front": "Term: Dumpster Diving",
+      "Back": "Definition: Searching through discarded items (like trash) for valuable information.\nTargets: Calendars, sticky notes, printouts, and other materials containing sensitive data.\nCountermeasures: Using secure destruction services and shredders."
+    },
+    {
+      "Front": "Term: FOCA (Fingerprinting Organizations with Collected Archives)",
+      "Back": "Definition: An OSINT tool used to find metadata and hidden information in scanned documents.\nFunction: Analyzes various file types for metadata from online sources.\nInstallation: Requires a Windows environment and several dependencies."
+    },
+    {
+      "Front": "Term: OSINT Framework",
+      "Back": "Definition: A browser-based framework that categorizes and provides links to various OSINT tools and resources.\nPurpose: To help with information gathering and finding tools in many categories.\nFeatures: Includes categories such as usernames, email addresses, domain names, IP addresses, and others."
+    },
+    {
+      "Front": "Term: Recon Dog",
+      "Back": "Definition: A Python-driven automation script for OSINT gathering.\nFeatures: Uses a menu-driven interface for different tasks (e.g., port scans, whois, subdomain lookup).\nRequires API keys for some functions.\nHow to Install: get clone from GitHub, install requirements, and make executable."
+    },
+    {
+      "Front": "Term: Maltego",
+      "Back": "Definition: A graphical tool for mapping assets and their relationships.\nFunction: Can map domains, IP addresses, and other online assets by creating nodes and connecting them.\nCan gather data from various online sources via modules.\nAvailability: Has a community version and is considered an industry standard."
+    },
+    {
+      "Front": "Term: Recon-NG",
+      "Back": "Definition: A modular framework similar to Metasploit for performing reconnaissance tasks.\nFeatures: Uses workspaces for each target, and allows the user to add and customize modules.\nPurpose: To organize information collected during reconnaissance."
+    },
+    {
+      "Front": "Term: Countermeasures (for Footprinting and Recon)",
+      "Back": "Definition: Methods of protecting against information gathering attacks.\nKey ideas: Reducing the attack surface and limiting available information about a target.\nExamples: Reducing the amount of public information, redacting information from public records, using encryption, and training employees."
+    }
+  ]
+}

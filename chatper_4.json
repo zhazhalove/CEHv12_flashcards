@@ -1,0 +1,104 @@
+{
+  "Chapter 4": [
+    {
+      "Front": "What is NetBIOS?",
+      "Back": "NetBIOS is a Windows service used for file and printer sharing. It allows computers to have a NetBIOS name and was initially an alternative to DNS. The nbtstat command can be used on Windows to gather information about local or remote machines."
+    },
+    {
+      "Front": "What is the command to check NetBIOS on Windows?",
+      "Back": "The nbtstat command is used to check NetBIOS on Windows. It can show the remote machine's name table with the -a option followed by the name, or the -A option followed by an IP address. It can also show the cache with -c, or local names with -n."
+    },
+    {
+      "Front": "What tool is used to check NetBIOS on Linux?",
+      "Back": "nbtscan is a Linux tool used for similar purposes as nbtstat on Windows. The -r option can be used followed by an IP address to get information. The -v option increases the verbosity of the output."
+    },
+    {
+      "Front": "How can nmap be used for NetBIOS enumeration?",
+      "Back": "nmap can use the nbstat.nse script to perform NetBIOS enumeration. The command sudo nmap -sV --script nbstat 192.168.2.200 can be used to get the NetBIOS name."
+    },
+    {
+      "Front": "What is SMB?",
+      "Back": "SMB (Server Message Block) is used for file sharing, similar to NetBIOS. It utilizes UDP ports 137 and 138, and TCP ports 137 and 139. Nmap can be used to enumerate SMB by using the -A option."
+    },
+    {
+      "Front": "How can nmap be used for SMB enumeration?",
+      "Back": "nmap can enumerate SMB with the -A option, which includes OS and versioning along with running scripts. The command sudo nmap -A -T5 -n -p 445 192.168.202.200 can be used to scan for SMB."
+    },
+    {
+      "Front": "What is the Windows command to view shares?",
+      "Back": "The net view command can be used on Windows to view available network shares. The syntax is net view \\\\target."
+    },
+    {
+      "Front": "What is the Linux command to list SMB shares?",
+      "Back": "The smbclient command with the -L option can be used to list shares on a target machine. The command smbclient -L \\\\10.0.13.203 will attempt to list shares."
+    },
+    {
+      "Front": "What is enum4linux?",
+      "Back": "enum4linux is a Linux tool that wraps up multiple tools to enumerate SMB shares. The command enum4linux -S 10.0.13.203 will list shares. It uses smbclient to produce the output."
+    },
+    {
+      "Front": "What is SNMP?",
+      "Back": "SNMP (Simple Network Management Protocol) is used for monitoring system health and relays information from agents to managers. It uses community strings, which often default to 'public'. It is OS independent and uses UDP port 161."
+    },
+    {
+      "Front": "What is a MIB and OID in SNMP?",
+      "Back": "A MIB (Management Information Base) is a database of objects that can be managed with SNMP. An OID (Object Identifier) identifies a specific object within a MIB."
+    },
+    {
+      "Front": "What is the 161 command?",
+      "Back": "The 161 command is a tool to scan for SNMP. The syntax for scanning a specific host is 161 <target IP>. It can use a community file with -c or specify multiple hosts."
+    },
+    {
+      "Front": "What is the snmp-check command?",
+      "Back": "snmp-check is a command-line tool that scans for SNMP information such as processes, network services, user accounts and more. It can show running processes, IP addresses, network connections and user accounts. The syntax is snmp-check <target IP>."
+    },
+    {
+      "Front": "How can nmap be used for SNMP enumeration?",
+      "Back": "nmap can use scripts to enumerate SNMP. The command sudo nmap -sU -p 161 --script snmp-win32-users 192.168.202.200 can be used to find user accounts using SNMP. There are multiple SNMP scripts available in nmap."
+    },
+    {
+      "Front": "What is the snmpwalk command?",
+      "Back": "snmpwalk is a tool to query SNMP enabled devices. It can be used to walk through the MIB and retrieve information. The syntax is snmpwalk -c public -v 1 192.168.202.200. It can also be used to search for specific OIDs."
+    },
+    {
+      "Front": "What is LDAP?",
+      "Back": "LDAP (Lightweight Directory Access Protocol) provides a central location for network resources and their attributes. It is often used with Active Directory in Windows environments. Standard LDAP uses port 389 and secure LDAP uses port 636."
+    },
+    {
+      "Front": "What are some Windows tools used for LDAP enumeration?",
+      "Back": "Windows tools include Server Admin Tools to view users and computers and AD Explorer from Sysinternals. The Server Admin tools allows for viewing of user attributes such as name, phone number, email and other information."
+    },
+    {
+      "Front": "What is Softera LDAP Administrator?",
+      "Back": "Softera LDAP Administrator is a third-party tool for directory management, that can connect to LDAP servers to glean information. Unlike some Windows based tools, this does not require access to the server."
+    },
+    {
+      "Front": "What is the ldapsearch command?",
+      "Back": "The ldapsearch command is a Linux tool used for querying LDAP servers. The command ldapsearch -LLL -x -H ldap://<target_ip> -b \"\" -s base objectclass=* can be used to get information."
+    },
+    {
+      "Front": "What is NTP?",
+      "Back": "NTP (Network Time Protocol) is used to synchronize time across devices. It uses UDP port 123."
+    },
+    {
+      "Front": "What is SMTP?",
+      "Back": "SMTP (Simple Mail Transfer Protocol) is used to send email. It commonly uses port 25."
+    },
+    {
+      "Front": "What is the ntpdate command?",
+      "Back": "ntpdate is used to query NTP servers for time information. The -d flag can be used for debug output."
+    },
+    {
+      "Front": "How can nmap be used for LDAP enumeration?",
+      "Back": "nmap has scripts for LDAP enumeration. The ldap-search.nse script can be used."
+    },
+    {
+      "Front": "How can Metasploit be used for SMTP enumeration?",
+      "Back": "Metasploit has auxiliary modules to enumerate SMTP users. The smtp_enum module can be used."
+    },
+    {
+      "Front": "How can nmap be used for SMTP enumeration?",
+      "Back": "nmap has an NSE script called smtp-enum-users that can be used to enumerate SMTP users. The syntax is sudo nmap -sV -p 25 --script smtp-enum-users <target>."
+    }
+  ]
+}

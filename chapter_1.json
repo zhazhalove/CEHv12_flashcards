@@ -1,0 +1,124 @@
+{
+  "Chapter 1": [
+    {
+      "Front": "What does the CIA triad stand for in cybersecurity?",
+      "Back": "Confidentiality, Integrity, and Availability."
+    },
+    {
+      "Front": "What is the difference between a red teamer and a blue teamer?",
+      "Back": "A red teamer tries to break into systems, while a blue teamer defends systems. Both are ethical hackers."
+    },
+    {
+      "Front": "Name three categories of hackers discussed in the sources.",
+      "Back": "State-sponsored hackers, hacktivists, and cyber terrorists."
+    },
+    {
+      "Front": "What are the five classifications of attacks mentioned?",
+      "Back": "Passive attacks, active attacks, close in attacks, insider attacks, and distribution attacks."
+    },
+    {
+      "Front": "Describe a passive attack.",
+      "Back": "A passive attack is gathering information without actively interacting with the target, like network sniffing, traffic analysis, or using a website like Grey Hat Warfare."
+    },
+    {
+      "Front": "What is a close-in attack?",
+      "Back": "A close-in attack requires physical proximity to the target, such as shoulder surfing or dumpster diving."
+    },
+    {
+      "Front": "What is the cyber kill chain?",
+      "Back": "The cyber kill chain is a framework describing the stages of a cyber attack. It has seven phases: Reconnaissance, Weaponization, Delivery, Exploitation, Installation, Command and Control, and Actions and Objectives."
+    },
+    {
+      "Front": "What does TTP stand for?",
+      "Back": "Tactics, Techniques, and Procedures. Tactics are the 'why', techniques are the 'how', and procedures are the specific steps to make it happen."
+    },
+    {
+      "Front": "What is a web shell?",
+      "Back": "A web shell is a malicious script that allows an attacker to execute commands on a web server."
+    },
+    {
+      "Front": "What does C2 stand for?",
+      "Back": "Command and Control. C2 servers are used by attackers to control compromised systems."
+    },
+    {
+      "Front": "What are Indicators of Compromise (IOCs)?",
+      "Back": "IOCs are pieces of evidence that indicate a system has been compromised. They can be in forms such as email, network, host-based and behavioral."
+    },
+    {
+      "Front": "What are the three components of risk calculation?",
+      "Back": "Risk is calculated by Threat x Vulnerability x Impact. It can also be calculated as Threat x Vulnerability x Asset."
+    },
+    {
+      "Front": "Name four categories of cyber threat intelligence (CTI).",
+      "Back": "Strategic, Operational, Tactical, and Technical."
+    },
+    {
+      "Front": "What are the five steps in the threat modeling process?",
+      "Back": "Identify security objectives, application overview, decompose the application, identify threats, and identify vulnerabilities."
+    },
+    {
+      "Front": "What are three threat modeling frameworks or models?",
+      "Back": "DREAD, STRIDE, and PASTA."
+    },
+    {
+      "Front": "What does the acronym STRIDE stand for in threat modeling?",
+      "Back": "Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege."
+    },
+    {
+      "Front": "What are the key phases of Incident Handling and Response (IHNR)?",
+      "Back": "Preparation, Identification, Containment, Eradication, Recovery, and Lessons Learned."
+    },
+    {
+      "Front": "What is the difference between Artificial Intelligence (AI) and Machine Learning (ML)?",
+      "Back": "AI is a broad concept of creating machines that act like humans. ML is a subset of AI that allows systems to learn from data through conditional statements and increase in knowledge."
+    },
+    {
+      "Front": "Name two types of machine learning techniques.",
+      "Back": "Supervised learning, which uses labeled data sets, and unsupervised learning, which uses unlabeled data sets."
+    },
+    {
+      "Front": "Name three problem types for unsupervised learning.",
+      "Back": "Clustering, Association, and Dimensionality Reduction."
+    },
+    {
+      "Front": "What is the Payment Card Industry Data Security Standard (PCI DSS)?",
+      "Back": "A security standard for organizations that handle credit card payments."
+    },
+    {
+      "Front": "What is ISO 27001?",
+      "Back": "A standard for information security management systems."
+    },
+    {
+      "Front": "What is the Digital Millennium Copyright Act (DMCA)?",
+      "Back": "A US law that protects intellectual property and copyrighted works."
+    },
+    {
+      "Front": "What is the Federal Information Security Modernization Act (FISMA)?",
+      "Back": "A US law that governs federal government oversight and security policies."
+    },
+    {
+      "Front": "What is the General Data Protection Regulation (GDPR)?",
+      "Back": "A European Union law on data protection and privacy."
+    },
+    {
+      "Front": "What are the phases of ethical hacking according to EC Council?",
+      "Back": "Planning and Reconnaissance, Scanning, Gaining Access, Maintaining Access, and Clearing Tracks."
+    },
+    {
+      "Front": "What is the MITRE ATT&CK framework?",
+      "Back": "A knowledge base of adversary tactics and techniques based on real-world observations."
+    },
+    {
+      "Front": "In the MITRE ATT&CK framework, what is the difference between a tactic and a technique?",
+      "Back": "A tactic represents why an adversary is performing an action, while a technique represents how an adversary achieves a technical goal."
+    },
+    {
+      "Front": "What are the four core features of the diamond model of intrusion analysis?",
+      "Back": "Adversary, Victim, Infrastructure, and Capability."
+    },
+    {
+      "Front": "What are meta-features in the Diamond Model of Intrusion Analysis?",
+      "Back": "Meta-features are things like timestamps, phases, methodology, resources, and direction, that help to analyze and understand an intrusion."
+    }
+  ]
+}

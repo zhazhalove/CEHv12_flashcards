@@ -1,0 +1,140 @@
+{
+  "Chapter 3": [
+    {
+      "Front": "Network Scanning",
+      "Back": "Network scanning is sometimes called host discovery, especially in the EC Council curriculum. It involves discovering live hosts on a network and finding weaknesses in a system. It is useful for cybersecurity professionals."
+    },
+    {
+      "Front": "Nmap",
+      "Back": "Nmap is a network scanning tool. It is used for host discovery, operating system version detection, and more. The documentation is available at nmap.org. Nmap can craft packets for different types of scans, and there is a recommended book on its usage."
+    },
+    {
+      "Front": "Nmap Host Discovery Options",
+      "Back": "Host discovery options in nmap include:\n- -PE: ICMP echo request.\n- -PP: ICMP timestamp request.\n- -PM: ICMP address mask request.\nOther options include PSP, PA, PU, and PY."
+    },
+    {
+      "Front": "Masscan",
+      "Back": "Masscan is a fast tool for scanning the internet. It is useful for host discovery and quickly scanning ports. Masscan has options compatible with Nmap."
+    },
+    {
+      "Front": "Hping3",
+      "Back": "Hping3 is a packet crafting utility. It can send different kinds of packets and perform ICMP, UDP, and scan mode scans. It is an important tool for the CEH exam."
+    },
+    {
+      "Front": "Unicornscan",
+      "Back": "Unicornscan is a network scanning tool, though less commonly used than Nmap."
+    },
+    {
+      "Front": "Vulnerability Scanning",
+      "Back": "Vulnerability scanning looks for weaknesses in systems. It can be done over a network or by using agents installed on the hosts."
+    },
+    {
+      "Front": "Objectives of Network Scanning",
+      "Back": "The objectives of network scanning are to discover live hosts on the network and identify open ports and services."
+    },
+    {
+      "Front": "External vs. Internal Network Scanning",
+      "Back": "External scans analyze external networks, while internal scans identify hosts within the internal network. External scans use ICMP, TCP, or UDP, while internal scans may use ARP."
+    },
+    {
+      "Front": "Trace Route",
+      "Back": "Trace route identifies the path that network traffic takes to reach its destination. It can use protocols like ICMP or TCP to discover routers and other layer 3 devices."
+    },
+    {
+      "Front": "Nmap Output Options",
+      "Back": "Nmap outputs scan results to different formats like XML, script kitty format, and grepable formats. Use the -o option to save outputs."
+    },
+    {
+      "Front": "Nmap Service Version Detection",
+      "Back": "The -sV option in nmap performs service and version detection to identify the specific service running on an open port."
+    },
+    {
+      "Front": "Common Ports",
+      "Back": "Nmap checks the top 1000 most commonly used ports by default. The nmap-services database lists these ports. A fast scan runs the top 100 ports."
+    },
+    {
+      "Front": "TCP Connect Scan",
+      "Back": "A TCP Connect Scan (Full Open Scan) uses the three-way handshake: SYN, SYN-ACK, and ACK. It uses the -sT option and does not require admin privileges."
+    },
+    {
+      "Front": "TCP 3-way Handshake",
+      "Back": "The three-way handshake includes:\n- Client sends SYN.\n- Server responds with SYN-ACK.\n- Client sends ACK."
+    },
+    {
+      "Front": "Closing a TCP Connection",
+      "Back": "A TCP connection is closed by sending a reset (RST) packet."
+    },
+    {
+      "Front": "Stealth Scan",
+      "Back": "A stealth scan sets the SYN flag. It is the default in nmap and uses the -sS option. Hping3 also performs stealth scans."
+    },
+    {
+      "Front": "Inverse TCP Scan",
+      "Back": "Inverse TCP scans send packets with no flags or with FIN, URG, or PSH flags. Open ports do not respond, while closed ports send RST. Options include -SF, -sN."
+    },
+    {
+      "Front": "Custom Scan Flags",
+      "Back": "Custom scan flags can be set with nmap (--scanflags) or hping3 (-F, -U, -P)."
+    },
+    {
+      "Front": "Xmas/Christmas Scan",
+      "Back": "A Christmas scan sets FIN, URG, and PUSH flags. The -sX option in nmap or -F -U -P in hping3 is used for this scan."
+    },
+    {
+      "Front": "Maimon Scan",
+      "Back": "A Maimon scan sets FIN and ACK flags. Use the -sM option in nmap or -F and -A flags in hping3."
+    },
+    {
+      "Front": "ACK Scan",
+      "Back": "ACK scans (-sA) identify firewalls. Open or closed ports return RST packets, and ACK scans help determine firewall states."
+    },
+    {
+      "Front": "Stateful vs Stateless Firewalls",
+      "Back": "Stateful firewalls track connection states and drop unrelated packets. Stateless firewalls do not track states and pass packets indiscriminately."
+    },
+    {
+      "Front": "IP ID Idle Scan (Zombie Scan)",
+      "Back": "This scan uses a zombie host to obfuscate the attacker's source. Nmap uses -sI for idle scans."
+    },
+    {
+      "Front": "UDP Scan",
+      "Back": "A UDP scan checks open UDP ports. Use the -sU option in nmap or hping3 for this scan."
+    },
+    {
+      "Front": "SCTP INIT Scan",
+      "Back": "SCTP INIT scans use the -sY flag in nmap. COOKIE ECHO scans use -sZ. Both require admin privileges."
+    },
+    {
+      "Front": "Scan Optimization",
+      "Back": "Optimize scans by reducing scanned ports and focusing on relevant ports. Use -f for the top 100 ports or -p for specific ports."
+    },
+    {
+      "Front": "Nmap Timing Templates",
+      "Back": "Nmap timing templates:\n- -T0: Paranoid\n- -T1: Sneaky\n- -T2: Polite\n- -T3: Normal\n- -T4: Aggressive\n- -T5: Insane"
+    },
+    {
+      "Front": "Target OS Identification",
+      "Back": "Nmap uses differences in OS behaviors for OS identification. Use the -O option for OS detection."
+    },
+    {
+      "Front": "Packet Fragmentation",
+      "Back": "Packet fragmentation breaks packets into smaller parts to evade firewalls. Use -f to fragment packets."
+    },
+    {
+      "Front": "IP Address Decoy",
+      "Back": "The -D option in nmap cloaks scans with decoy IPs, making the source harder to detect."
+    },
+    {
+      "Front": "Spoofing Source IP Addresses",
+      "Back": "Spoofing IPs hides the scan's source. Use the -e and -p options in nmap. Note that results may not be useful."
+    },
+    {
+      "Front": "Randomizing Hosts",
+      "Back": "Use --randomize-hosts in nmap to scan hosts in a random order, reducing detectability."
+    },
+    {
+      "Front": "Proxy Servers",
+      "Back": "The --proxies option in nmap uses proxy servers to route scans, enhancing anonymity."
+    }
+  ]
+}
