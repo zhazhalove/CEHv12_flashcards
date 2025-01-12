@@ -1,0 +1,180 @@
+{
+  "Chapter 6": [
+    {
+      "Front": "What is the primary focus of the CEH hacking methodology?",
+      "Back": "The CEH hacking methodology is specific to EC Council's approach and is intended to help you pass the CEH exam."
+    },
+    {
+      "Front": "What is the purpose of password cracking?",
+      "Back": "Password cracking is used to discover passwords for both ethical and malicious purposes."
+    },
+    {
+      "Front": "What is the first step when accessing a client computer, according to the provided pseudo code?",
+      "Back": "The first step is that a user provides information including a domain name, username, and password."
+    },
+    {
+      "Front": "What is a 'challenge' in the context of authentication?",
+      "Back": "A challenge is a random 16-byte number sent by the server to the client to verify the client's identity."
+    },
+    {
+      "Front": "What is a 'response' in the context of authentication?",
+      "Back": "A response is the encrypted challenge, using the hash of the user's password, that the client sends back to the server."
+    },
+    {
+      "Front": "What does a domain controller do with the username, challenge, and response?",
+      "Back": "The domain controller verifies the username, challenge, and response to authenticate the user."
+    },
+    {
+      "Front": "What is a TGT?",
+      "Back": "A TGT (Ticket Granting Ticket) is given to a client after successful authentication and is used to access other resources."
+    },
+    {
+      "Front": "What is social engineering in the context of password acquisition?",
+      "Back": "Social engineering is a non-technical way to get passwords by manipulating people into revealing them."
+    },
+    {
+      "Front": "What are online password cracking techniques?",
+      "Back": "Online password cracking techniques require an active network connection and include dictionary attacks, brute force attacks, and more."
+    },
+    {
+      "Front": "What is a dictionary attack?",
+      "Back": "A dictionary attack uses a list of words or strings to try and guess a password."
+    },
+    {
+      "Front": "What is a brute force attack?",
+      "Back": "A brute force attack tries every possible combination of characters within a given set and length until a password is found."
+    },
+    {
+      "Front": "What is the difference between online and offline password cracking techniques?",
+      "Back": "Online techniques require a network connection, while offline techniques work with previously obtained password hashes."
+    },
+    {
+      "Front": "What is a rainbow table?",
+      "Back": "A rainbow table is a pre-computed table of hashed passwords used for faster password cracking."
+    },
+    {
+      "Front": "What is the purpose of tools like John the Ripper and Hashcat?",
+      "Back": "These tools are used for password cracking using various techniques, including wordlists and brute force."
+    },
+    {
+      "Front": "What is the 'combinator' technique in password cracking?",
+      "Back": "The combinator technique involves combining two or more dictionaries to create a larger and more comprehensive wordlist."
+    },
+    {
+      "Front": "What is the 'Prince' technique in password cracking?",
+      "Back": "The 'Prince' technique (Probability Infinite Chained Elements) uses one dictionary but creates new words based on known criteria."
+    },
+    {
+      "Front": "What is the 'toggle case' technique in password cracking?",
+      "Back": "The 'toggle case' technique tries every possible case iteration of a word (e.g., 'password,' 'Password,' 'pAssword')."
+    },
+    {
+      "Front": "What is a Markov chain in password cracking?",
+      "Back": "A Markov chain analyzes previously cracked passwords to identify patterns, enhancing future password-cracking attempts."
+    },
+    {
+      "Front": "What is a buffer overflow?",
+      "Back": "A buffer overflow occurs when a program writes data beyond its allocated buffer, potentially leading to crashes or malicious code execution."
+    },
+    {
+      "Front": "What are some important registers to know when exploiting a buffer overflow?",
+      "Back": "Important registers include EBP (base pointer), ESP (stack pointer), and EIP (instruction pointer)."
+    },
+    {
+      "Front": "What is 'fuzzing' in the context of buffer overflows?",
+      "Back": "Fuzzing involves sending odd or oversized input to a program to identify potential crash conditions."
+    },
+    {
+      "Front": "What is the purpose of a debugger in the context of buffer overflow?",
+      "Back": "A debugger helps analyze registers and pointers during a buffer overflow."
+    },
+    {
+      "Front": "What are some countermeasures to buffer overflow attacks?",
+      "Back": "Countermeasures include ASLR, DEP, safe coding practices, and code analysis."
+    },
+    {
+      "Front": "What is privilege escalation (privesc)?",
+      "Back": "Privilege escalation involves gaining higher-level access to a system than what was initially granted."
+    },
+    {
+      "Front": "How can software vulnerabilities be used for privilege escalation?",
+      "Back": "Exploiting OS or software vulnerabilities can grant an attacker higher-level access."
+    },
+    {
+      "Front": "What is steganography?",
+      "Back": "Steganography is the art of hiding data within other files, such as images, audio, or video."
+    },
+    {
+      "Front": "What is steganalysis?",
+      "Back": "Steganalysis detects the presence of hidden data in files suspected of using steganography."
+    },
+    {
+      "Front": "What is the purpose of the tool Steghide?",
+      "Back": "Steghide embeds data in file types like images and extracts hidden information."
+    },
+    {
+      "Front": "What is the purpose of the tool Steg Snow?",
+      "Back": "Steg Snow conceals messages within text files."
+    },
+    {
+      "Front": "What is the purpose of clearing or disabling command history?",
+      "Back": "Clearing or disabling command history prevents forensic investigators from tracking system actions."
+    },
+    {
+      "Front": "What is the purpose of 'DevNulcage'?",
+      "Back": "Redirecting command history to 'DevNulcage' prevents commands from being saved."
+    },
+    {
+      "Front": "What is the tool 'wevtutil' used for?",
+      "Back": "'Wevtutil' is a Windows command-line tool for managing event logs."
+    },
+    {
+      "Front": "What is the purpose of Syslog in security?",
+      "Back": "Syslog copies log events to a remote server, aiding in attack detection even when local logs are tampered with."
+    },
+    {
+      "Front": "What is the purpose of 'PowerView'?",
+      "Back": "'PowerView' is a PowerShell tool for network reconnaissance and enumeration in Windows environments."
+    },
+    {
+      "Front": "What is the purpose of 'Bloodhound'?",
+      "Back": "'Bloodhound' maps relationships in Active Directory to identify attack paths."
+    },
+    {
+      "Front": "What is the purpose of 'MimiKatz'?",
+      "Back": "'MimiKatz' extracts passwords, hashes, tickets, and other credentials from Windows systems."
+    },
+    {
+      "Front": "What is DPAPI?",
+      "Back": "DPAPI (Data Protection API) stores encrypted data like browser passwords and Wi-Fi credentials."
+    },
+    {
+      "Front": "What is a 'DCsync' attack?",
+      "Back": "A 'DCsync' attack uses MimiKatz to impersonate a domain controller and request password data."
+    },
+    {
+      "Front": "What is a 'skeleton key' attack?",
+      "Back": "A 'skeleton key' attack creates a backdoor password usable on any account."
+    },
+    {
+      "Front": "What is a 'golden ticket' attack?",
+      "Back": "A 'golden ticket' attack grants admin-level tickets by obtaining the krbtgt account password hash."
+    },
+    {
+      "Front": "What is a 'pass-the-hash' attack?",
+      "Back": "A 'pass-the-hash' attack uses a password hash to authenticate without knowing the password."
+    },
+    {
+      "Front": "What is 'pivoting' in cybersecurity?",
+      "Back": "Pivoting uses a compromised system to access other systems on the network."
+    },
+    {
+      "Front": "What is 'relaying' in cybersecurity?",
+      "Back": "Relaying takes authentication traffic from one system and relays it to another for access."
+    },
+    {
+      "Front": "What tool is used to set up a proxy chain?",
+      "Back": "The 'proxychains' tool sets up a network pivot through a compromised host."
+    }
+  ]
+}
