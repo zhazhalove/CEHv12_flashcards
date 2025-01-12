@@ -1,1 +1,4 @@
 /.venv
+/build
+/dist
+flash_card_reader.spec
